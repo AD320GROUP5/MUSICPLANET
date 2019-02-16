@@ -1,1 +1,16 @@
--User stories
+- User stories
+
+1)VIEW PAGE:
+	So the user would want to search or view a song.
+	
+3)ACCOUNT DETAILS:
+	The user has to have an account that has all his informations and playlists history.
+
+4)MANAGE MUSIC:
+	The user would want to edit, add, and delete all in one page. we can think of small icons listed in one row for each song searched.
+
+2)DOWNLOAD MUSIC(Offline):
+	What if the user have issues connecting with the website? It would be better if there's a download option so they can listen to music offline too.
+
+5)STREAM MUSIC:
+	Download & Stream can go together which the user would want to have easy and fast access to them.
