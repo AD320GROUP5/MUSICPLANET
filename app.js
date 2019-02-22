@@ -1,41 +1,34 @@
 
-
-
 var express = require('express');
+var path = require('path');
+
+
+
+
+var indexRouter = require('./routes/index');
+var viewRouter = require('./routes/view');
+var deleteRouter = require('./routes/delete');
+var addRouter = require('./routes/add');
+var aboutRouter = require('./routes/about');
+var editRouter = require('./routes/edit');
 
 
 var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.get('/', function (req, res) {
-  res.render('index', { title: 'Hey', message: 'Hello there!' })
-})
-
-app.get('/view', (req, res) => {
-  res.render('view')
-})
-
-app.get('/delete', (req, res) => {
-  res.render('delete')
-})
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('/add', (req, res) => {
-  res.render('add', { getName: () => 'Flavio' })
-})
-
-app.get('/delete', (req, res) => {
-  res.render('delete')
-})
-
-app.get('/about', (req, res) => {
-  res.render('about', { getName: () => 'Flavio' })
-})
-
-app.get('/edit', (req, res) => {
-  res.render('edit', { getName: () => 'Flavio' })
-})
-
+app.use('/', indexRouter);
+app.use('/view', viewRouter);
+app.use('/delete', deleteRouter);
+app.use('/add', addRouter);
+app.use('/about', aboutRouter);
+app.use('/edit', editRouter);
 
 
 .use(function(req, res, next){
@@ -46,5 +39,5 @@ app.get('/edit', (req, res) => {
 
 });
 
-
-app.listen(8080);
+module.exports = app;
+//app.listen(8080);
