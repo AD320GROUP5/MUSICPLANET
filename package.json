@@ -1,0 +1,10 @@
+{
+    "name": "my-app",
+    "version": "0.1.0",
+    "dependencies": {
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "markdown": "~0.4",
+        "pug": "^2.0.3"
+    }
+}
