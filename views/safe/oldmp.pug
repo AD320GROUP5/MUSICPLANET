@@ -1,0 +1,39 @@
+
+
+html
+  head
+    script(src='action.js')
+    |   
+    link(rel='stylesheet', type='text/css', href='style.css')
+    |   
+    title GROUP 5
+  |  
+  body(bgcolor='black')
+    // <h1>Grid Layout</h1>
+    //
+      <p>This grid layout contains six columns and three rows:</p>
+    .grid-container-top
+      .item2
+        img(src='concert.png', alt='concert')
+		
+    .grid-container
+      .item3
+        h1 MUSIC PLANET
+        | &#x9;&#x9; 
+        h4 a Group 5 Company
+    |    
+    |      
+    .grid-container-two
+      .item4
+        button#jstrigger.button(type='button', onclick='javascript:addClick();') &nbsp; &nbsp; ADD A SONG &nbsp;  
+      | &#x9;
+      |     
+      .item5
+        button#jstrigger.button(type='button', onclick='javascript:deleteClick();') DELETE A SONG
+    .grid-container-three
+      .item6
+        button#jstrigger.button(type='button', onclick='javascript:editClick();') MODIFY A SONG
+      | &#x9;
+      |     
+      .item7
+        button#jstrigger.button(type='button', onclick='javascript:viewClick();')   &nbsp; &nbsp;     VIEW SONGS &nbsp;  
