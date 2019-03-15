@@ -1,12 +1,42 @@
 
-p {
-	color: darkkhaki;
+
+body {
+  padding: 5px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #371234;
+  font: color: red;
+
+}
+
+head{
+  padding: 5px;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: purple;
+  font: color: red;
+
 }
 
 a {
-	font-size: 10x;
-	color: lightcoral;
+  color: #00B7FF;
 }
+
+.lefty{
+  margin-left: 400px;
+}
+
+input {
+  color: #00B7FF;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: purple;
+
+  margin-left: 15px;
+}
+
 .alert {
   padding: 20px;
   background-color: #f44336; /* Red */
@@ -38,7 +68,7 @@ a {
 
 .item2 { grid-area: top; }
 .item3 { grid-area: head; }
-.item4 { grid-area: left; }
+.item4 { grid-area: lef; }
 .item5 { grid-area: footer;}
 .item6 { grid-area: left2;}
 .item7 { grid-area: right2;}
@@ -67,7 +97,7 @@ a {
 
 }
 
-/*One*/  
+/*One*/
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -83,14 +113,12 @@ a {
   padding: 5px 0;
     font-size: 24px;
   }
-  
+
 /*Two*/
 .grid-container-two {
   display: grid;
   grid-template-areas:
-
- 'left left left left left left'
-  ;
+ 'lef lef lef footer footer footer';
   grid-gap: 5px;
   background-color: #30123b;
   padding: 5px;
@@ -103,13 +131,11 @@ a {
   padding: 5px 0;
   font-size: 30px;
 }
-
 /*Three*/
 .grid-container-three {
   display: grid;
   grid-template-areas:
- 'add1 add1 add1 add2 add2 add2'
-  ;
+ 'left2 left2 left2 right2 right2 right2'  ;
   grid-gap: 5px;
   background-color: #30123b;
    padding: 5px;
@@ -120,9 +146,7 @@ a {
    color: darkkhaki;
   text-align: center;
   padding: 5px 0;
-  font-size: 40px;
-  color = "white';
-
+  font-size: 30px;
 }
 
 /*Four*/
@@ -136,6 +160,50 @@ a {
    padding: 5px;
 }
 .grid-container-four> div {
+	  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 4);
+   color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 40px;
+  color = "white';
+
+}
+
+
+/*Five*/
+.grid-container-five {
+  display: grid;
+  grid-template-areas:
+ 'add1 add1 add1 add1 add1 add1'
+  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+   padding: 5px;
+}
+.grid-container-five> div {
+	  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 4);
+   color: darkkhaki;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 40px;
+  color = "white';
+
+}
+
+
+/*six*/
+.grid-container-six {
+  display: grid;
+  grid-template-areas:
+ 'add2 add2 add2 add2 add2 add2'
+  ;
+  grid-gap: 5px;
+  background-color: #30123b;
+   padding: 5px;
+}
+.grid-container-six> div {
 	  grid-template-columns: auto auto auto;
   background-color: rgba(0, 0, 0, 4);
    color: darkkhaki;
